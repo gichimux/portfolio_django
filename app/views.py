@@ -6,6 +6,7 @@ from django.core.mail import send_mail, BadHeaderError
 
 # Create your views here.
 def index(request):
+	form = ContactForm()
 	request.method == 'POST'
 	name = request.POST.get('contact_name')
 	email = request.POST.get('contact_email')
