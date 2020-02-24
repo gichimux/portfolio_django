@@ -1,0 +1,525 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>George Mwai Portfolio Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="developer portfolio website" />
+	<meta name="author" content="George Mwai" />
+
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css'%}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="{% static 'css/simple-line-icons.css'%}">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+	<!-- font  -->
+	<link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture&display=swap" rel="stylesheet">
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js'%}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">	
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner"  data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-default navbar-fixed-top">
+					<div class="navbar-header">
+						<!-- Mobile Toggle Menu Button -->
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+						<a class="navbar-brand" href="index.html">BG <span style="color:red">.</span></a> 
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+							<li><a href="#" data-nav-section="about"><span>About</span></a></li>
+							<li><a href="#" data-nav-section="services"><span>Services</span></a></li>
+							
+							<li><a href="#" data-nav-section="skills"><span>Skills</span></a></li>
+							<li><a href="#" data-nav-section="portfolio"><span>Portfolio</span></a></li>
+							<li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+	  </div>
+	  <br>
+		<div class="overlay"></div>
+		<section data-section="home">
+		<div class="container" >
+			<div class="row" >
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t js-fullheight" id= "cover">
+						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn"><br>
+							<div class="profile-thumb" style="background: url({% static 'images/image1.jpg'%});"></div>
+							<h1><span>George G. Mwai</span></h1>
+							<h3 ><span>Writer & Software Developer</span></h3>
+							<p>
+								<ul class="fh5co-social-icons">
+									<li><a href="#"><i class="icon-facebook2"></i></a></li>
+							<li><a href="#"><i class="icon-twitter2"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+							<li><a href="#"><i class="icon-github2"></i></a></li>
+						</ul>
+							</p>
+							<p><a href="#" class="btn btn-success btn-md">My Projects</a></p>
+				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	</header>
+
+	<section data-section="about">
+	<div id="fh5co-about" class="animate-box" >
+		<div class="container" >
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>About Me</h2>
+				</div>
+			</div>
+			<div class="row" id="about-me">
+				<div class="col-md-6">
+					<img src="{% static 'images/about.svg'%}" style="width:300px; height:300px;">
+				</div>
+				<div class="col-md-6" >
+					<h2>Hello There!</h2><p >
+					I am a self taught back end web developer who mainly works with django and flask frameworks. I also design and Build User Interfaces Using various front end technologies such as Bootstrap, React and Angular. I have been coding for 2 years, yet i keep discovering and learning new things everyday. But that's what i love about coding, its always an adventure!
+					</p>
+
+					<p><a href="#" class="btn btn-success btn-md">Download Resume</a></p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<section data-section="services">
+	<div id="fh5co-features" class="animate-box">
+		<div class="container">
+			<div class="services-padding">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>My Services</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span>
+								<img src="{% static 'images/ui.svg'%}" style="height:100px; width:100px">
+							</span>
+							<div class="feature-copy">
+								<h3>UI/UX Design</h3>
+								<p>designing interfaces and a user experience that combines beauty and functionality</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span>
+								<img src="{% static 'images/dev.svg'%}" style="height:100px; width:100px">
+							</span>
+							<div class="feature-copy">
+								<h3>Software Development</h3>
+								<p>Coding the Front-end and the Back-end of custom software as specified by the client</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span>
+								<img src="{% static 'images/analytics.svg'%}" style="height:100px; width:100px">
+							</span>
+							<div class="feature-copy">
+								<h3>Analytics And Data Visualization</h3>
+								<p>Enabling the client to produce useful analysis and visualize their data using Various technologies</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-6 text-center">
+
+						<div class="feature-left">
+							<span>
+								<img src="{% static 'images/consult.svg'%}" style="height:100px; width:100px">
+							</span>
+							<div class="feature-copy">
+								<h3>Technology consultancy</h3>
+								<p>Using my knowledge of different technologies to offer insight to my clients on the best suited technologies to implement</p>
+							</div>
+						</div>
+
+				
+
+					<!--div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-genius"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Web Marketing</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+							</div>
+						</div-->
+
+					</div>
+					<div class="col-md-6 text-center">
+						<div class="feature-left">
+							<span>
+								<img src="{% static 'images/maintain.svg'%}" style="height:100px; width:100px">
+							</span>
+							<div class="feature-copy">
+								<h3>Meintenance and Support</h3>
+								<p>Regurarly Maintaining my client's code base and being on call to fix bugs that may arise in their code</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section data-section="skills">
+	<div id="fh5co-skills" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Skills</h2>
+				</div>
+			</div>
+			<div class="row row-pb-md">
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="89"><span><strong>JavaScript</strong>85%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="89"><span><strong>Python</strong>80%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="85"><span><strong>PostgreSQL</strong>87%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>Angular</strong>80%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>Node.js</strong>75%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="85"><span><strong>Flask</strong>85%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>Django</strong>90%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>HightCharts.js</strong>70%</span></div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+	<section data-section="portfolio">
+	<div id="fh5co-work" class="fh5co-bg-dark">
+		<div class="container">
+			<section id="portfolio" class="light-bg">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="section-title">
+						<h2>My Projects</h2>
+						<p>Our portfolio is the best way to show our work, you can see here a big range of our work. Check them all and you will find what you are looking for.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- start portfolio item -->
+				<div class="col-md-4">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="{% static 'images/projects/awwards_clone.png'%}"  alt="img02" class="img-responsive" />
+							<figcaption>
+								<h2>Dean & Letter</h2>
+								<p>Branding, Design</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-1">View more</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- start portfolio item -->
+				<div class="col-md-4">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="{% static 'images/projects/gallery.png'%}" alt="img02" class="img-responsive" />
+							<figcaption>
+								<h2>Startup Framework</h2>
+								<p>Branding, Web Design</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- start portfolio item -->
+				<div class="col-md-4">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="{% static 'images/projects/loop.png'%}" alt="img02" class="img-responsive" />
+							<figcaption>
+								<h2>Lamp & Velvet</h2>
+								<p>Branding, Web Design</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-3">View more</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+			</div>
+			<div class="row">
+				<!-- start portfolio item -->
+				<div class="col-md-4">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="{% static 'images/projects/news.png'%}" alt="img02" class="img-responsive" />
+							<figcaption>
+								<h2>Smart Name</h2>
+								<p>Branding, Design</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-4">View more</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- start portfolio item -->
+				<div class="col-md-4">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="{% static 'images/projects/offspring.png'%}" alt="img02" class="img-responsive" />
+							<figcaption>
+								<h2>Fast People</h2>
+								<p>Branding, Web Design</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-5">View more</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- start portfolio item -->
+				<div class="col-md-4">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="{% static 'images/projects/watchlist.png'%}" alt="img02" class="img-responsive" />
+							<figcaption>
+								<h2>Kites & Stars</h2>
+								<p>Branding, Web Design</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+			</div>
+			</div>
+			<!-- end container -->
+
+		</section>
+		</div>
+	</div>
+
+	<!--div id="fh5co-blog">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Post on Medium</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="baes/portfolio-1.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Mar. 15th 2016</span>
+							<h3><a href="#">Photoshoot On The Street</a></h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="stuff">
+								<li><i class="icon-heart2"></i>249</li>
+								<li><i class="icon-eye2"></i>308</li>
+								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url({% static 'images/portfolio-2.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Mar. 15th 2016</span>
+							<h3><a href="#">Surfing at Philippines</a></h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="stuff">
+								<li><i class="icon-heart2"></i>249</li>
+								<li><i class="icon-eye2"></i>308</li>
+								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-3.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Mar. 15th 2016</span>
+							<h3><a href="#">Capture Living On Uderwater</a></h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="stuff">
+								<li><i class="icon-heart2"></i>249</li>
+								<li><i class="icon-eye2"></i>308</li>
+								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div-->
+	
+
+<!-- 	<div id="fh5co-started" class="fh5co-bg-dark">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<p><a href="#" class="btn btn-default btn-lg">Hire Me!</a></p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<section data-section="contact"><br>
+	<div id="fh5co-consult">
+		<div>
+			<img src="{% static 'images/mail.svg'%}" style="height: 500px;
+				width: 500px;">
+		</div>
+		<div class="choose animate-box">
+			<h2>Contact</h2>
+			<form role="form" method="POST">
+				{% csrf_token %}
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text"  class="form-control"
+						 name="contact_name"
+						 placeholder="Your name" required>
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" id="email" class="form-control"
+						 name="contact_email"
+						 placeholder="Your email address" required>
+					</div>
+				</div>
+
+				
+				<div class="row form-group">
+					<div class="col-md-12">
+						<textarea name="content" id="message" cols="30" rows="10" class="form-control" placeholder="Your message" required></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Send Message" name="submit" class="btn btn-success">
+				</div>
+
+			</form>	
+		</div>
+	</div>
+</section>
+	
+	
+	<div id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>&copy; 2020 George G. Mwai</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js'%}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js'%}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js'%}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js'%}"></script>
+	<!-- Stellar Parallax -->
+	<script src="{% static 'js/jquery.stellar.min.js'%}"></script>
+	<!-- Easy PieChart -->
+	<script src="{% static 'js/jquery.easypiechart.min.js'%}"></script>
+	<!-- Google Map -->
+	<!--script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="{% static 'js/google_map.js"></script-->
+	
+	<!-- Main -->
+	<script src="{% static 'js/main.js'%}"></script>
+
+	</body>
+</html>
+
