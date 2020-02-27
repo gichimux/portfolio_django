@@ -4,6 +4,7 @@ from django.http import HttpResponse, Http404, HttpResponseRedirect, JsonRespons
 from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError
 
+
 # Create your views here.
 def index(request):
 	form = ContactForm()
